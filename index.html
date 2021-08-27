@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <!-- Google Fonts: Ubuntu -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- my CSS-->
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>RGB to HEX</title>
+</head>
+
+<body>
+  <div id='RGB-to-HEX'>
+    <h1>
+      RGB to HEX
+    </h1>
+    <div id='RGB-to-HEX-display'>
+      <div id='RGB-section'>
+        <h3>RGB</h3>
+        <div id='r-section'>
+          <div class='title'>R:</div>
+          <input class='RGB-blank rounded' type="number" min='0' max='255' placeholder='255'>
+          <div class='RGB-display' style='background-color: rgb(255, 0, 0)'></div>
+        </div>
+        <div id='g-section'>
+          <div class='title'>G:</div>
+          <input class='RGB-blank rounded' type="number" min='0' max='255' placeholder='102'>
+          <div class='RGB-display' style='background-color: rgb(0, 102, 0)'></div>
+        </div>
+        <div id='b-section'>
+          <div class='title'>B:</div>
+          <input class='RGB-blank rounded' type="number" min='0' max='255' placeholder='0'>
+          <div class='RGB-display' style='background-color: rgb(0, 0, 0)'></div>
+        </div>
+        <button class="rounded">convert</button>
+      </div>
+      <div id='HEX-section'>
+        <h3>HEX</h3>
+        <div class='HEX-blank rounded'>#FF6600</div>
+        <div class='HEX-display' style='background-color: #ff6600'></div>
+      </div>
+    </div>
+  </div>
+  <div id='color-slider' style='background-color: #213e70'>
+    <h1>
+      Color Slider
+    </h1>
+    <div id='color-slider-display'>
+      <div id='red-section'>
+        <div class='title'>R:</div>
+        <input type="range" class="points" name="points" min="0" max="255" value="33">
+        <div class='color-display rounded' style='background-color: rgb(33, 0, 0)'> 33 </div>
+      </div>
+      <div id='green-section'>
+        <div class='title'>G:</div>
+        <input type="range" class="points" name="points" min="0" max="255" value="62">
+        <div class='color-display rounded' style='background-color: rgb(0, 62, 0)'> 62 </div>
+      </div>
+      <div id='blue-section'>
+        <div class='title'>B:</div>
+        <input type="range" class="points" name="points" min="0" max="255" value="112">
+        <div class='color-display rounded' style='background-color: rgb(0, 0, 112)'> 112 </div>
+      </div>
+      <div class='slider-display rounded'>#213E70</div>
+    </div>
+  </div>
+
+  <!-- Bootstrap: 須照順序 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
